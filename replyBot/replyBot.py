@@ -1,6 +1,8 @@
 import tweepy
 from time import sleep
 
+
+# Created By: ZamboniL
 # This program serves as a BOT that checks someones twitter
 # If the user posted a new tweet this BOT then replys to his tweet
 

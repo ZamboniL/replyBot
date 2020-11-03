@@ -1,5 +1,7 @@
 # TwitterReplyBot
+
 Twitter reply bot, that for every new tweet a user posts it replies with a automated message. 
+
 # usage
 
 Before running the bot you have to configure certain .txt files, so it can connect to the twitter API and send your message correctly.
@@ -11,6 +13,7 @@ CONSUMER_KEY:
 CONSUMER_SECRET:
 TARGET_USER:
 TARGET_TEXT:
+SPONGIFY:
 MESSAGE:
 TIME_TO_CHECK:
 LAST_ID_FILE:
@@ -23,6 +26,9 @@ This should be your config.txt file parameters; ```ACCESS_TOKEN```, ```ACCESS_TO
 ```TIME_TO_CHECK``` how fast the code will loop and search for a new tweet, it's in seconds, if you leave it empty it will default to 600(10 minutes).
 
 ```LAST_ID_FILE``` Which file the code will create and search for the users last tweet ID.
+
+NEW: ```SPONGIFY``` A bool condition that creates a mock of the text the user tweeted example: ```"I love Lucy"``` becomes; ```"i lOVe lUcY"```, it's false as default but you just need to change it to true.
+
 # example
 
 ```
@@ -32,6 +38,7 @@ CONSUMER_KEY:fcmYPNpcYkljhnAMjCfXxVPQ6R
 CONSUMER_SECRET:4P2i6e3IokkfTU4Hzvji9TkRCZKtLçoutyQHJpNpGCQLGbo7M8FRg
 TARGET_USER:twitter
 TARGET_TEXT:Hi
+SPONGIFY:false
 MESSAGE:Hi!
 TIME_TO_CHECK:10
 LAST_ID_FILE:last_tweet.txt

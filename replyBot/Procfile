@@ -1,1 +1,1 @@
-worker: python bolsoBOT.py
+worker: python replyBot.py
